@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Overview
 
-## Getting Started
+This project demonstrates how to integrate a Rive animation within a React application. The goal was to recreate a Figma design implementation, To do this I used Rive for animations and React for web implementation. The Rive animation includes advanced hover effects and a click animation.
 
-First, run the development server:
+Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Hover Animation: The Rive component responds with animations when hovered over, providing an interactive user experience.
+Click to Reset: Clicking on the Rive component triggers an animation reset, returning it to its initial state.
+Implementation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rive Setup: A Rive animation file (invisible.riv) was created and configured with necessary animations and state machines.
+React Integration: The Rive animation was integrated into a React component using the @rive-app/react-canvas library.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Explanation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+useRive Hook: Loads the Rive animation file and initializes the state machine for autoplay.
+RiveComponent: Renders the Rive animation with specified layout properties.
 
-## Learn More
+Conclusion
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project successfully demonstrates the integration of Rive animations within a React application, achieving interactive hover effects and a click animation. 
